@@ -17,3 +17,8 @@ class ShowHello extends HTMLElement {
 }
 
 customElements.define('show-hello', ShowHello);
+
+let elem = document.createElement('div');
+elem.append(template.content.cloneNode(true));
+
+document.getElementById('template-btn').addEventListener('click', () => document.body.append(elem));

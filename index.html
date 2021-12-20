@@ -7,12 +7,19 @@
     <title>Document</title>
 </head>
 <body>
+    <h3>Использование HTMLButtonElement</h3>
     <button is='hello-button'>Bobby</button>
     <button is='hello-button'>Masha</button>
     <button is='hello-button'>John</button>
     <button is='hello-button'>Annie</button>
-    
+    <h3>Использование shadow DOM</h3>
     <show-hello name='John'></show-hello>
+    <h3>Использование template</h3>
+    <button id='template-btn'>template</button>
+    <template id='template'>
+        <script>alert('Hello')</script>
+        <div>Hello, world!</div>
+    </template>
     <script type='text/javascript' src="index.js"></script>
 </body>
 </html>
